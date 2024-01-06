@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread][%X{traceId}] %-5level %logger{50} - %m %replace(%xException){'\n','|'}%nopex%n"/>
+<!--    %m MULTIEXCEPTION %replace(%xException){'\n','\u2028'}%nopex%n-->
+    <!--控制台设置-->
+    <!--  appender主要用来指定输出介质是什么，设置consoleAppender媒介，指定输出到控制台-->
+    <!-- 相当于一个layout（将envent事件转换为byte数组），但是它即负责转换字符串，也负责输入到日志文件中 -->
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- 定义格式 (引用变量)-->
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="consoleAppender"/>
+    </root>
+
+</configuration>

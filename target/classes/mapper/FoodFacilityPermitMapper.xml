@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.esteeLauder.mapper.FoodFacilityPermitMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.el.model.FoodFacilityPermit">
+        <id column="location_id" property="locationId" />
+        <result column="applicant" property="applicant" />
+        <result column="facility_type" property="facilityType" />
+        <result column="cnn" property="cnn" />
+        <result column="location_description" property="locationDescription" />
+        <result column="address" property="address" />
+        <result column="block_lot" property="blockLot" />
+        <result column="block" property="block" />
+        <result column="lot" property="lot" />
+        <result column="permit" property="permit" />
+        <result column="Status" property="status" />
+        <result column="food_items" property="foodItems" />
+        <result column="X" property="x" />
+        <result column="Y" property="y" />
+        <result column="latitude" property="latitude" />
+        <result column="longitude" property="longitude" />
+        <result column="schedule" property="schedule" />
+        <result column="dayshours" property="dayshours" />
+        <result column="NOISent" property="noisent" />
+        <result column="approved" property="approved" />
+        <result column="received" property="received" />
+        <result column="priorPermit" property="priorpermit" />
+        <result column="expiration_date" property="expirationDate" />
+        <result column="location" property="location" />
+        <result column="fire_prevention_districts" property="firePreventionDistricts" />
+        <result column="police_districts" property="policeDistricts" />
+        <result column="supervisor_districts" property="supervisorDistricts" />
+        <result column="zip_codes" property="zipCodes" />
+        <result column="neighborhoods" property="neighborhoods" />
+        <result column="data_status" property="dataStatus" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        location_id, applicant, facility_type, cnn, location_description, address, block_lot, block, lot, permit, Status, food_items, X, Y, latitude, longitude, schedule, dayshours, NOISent, approved, received, priorPermit, expiration_date, location, fire_prevention_districts, police_districts, supervisor_districts, zip_codes, neighborhoods, data_status, create_time, update_time
+    </sql>
+
+</mapper>

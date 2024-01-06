@@ -1,0 +1,17 @@
+com\el\service\impl\FoodFacilityPermitServiceImpl.class
+com\el\util\QueryUtil.class
+com\el\vo\ResultCodes.class
+com\el\vo\QueryPageDto.class
+com\el\controller\FoodFacilityPermitController.class
+com\el\repository\impl\FoodFacilityPermitRepositoryImpl.class
+com\el\repository\FoodFacilityPermitRepository.class
+com\el\service\FoodFacilityPermitService.class
+com\el\WepsShellApplication.class
+com\el\vo\ApiResult.class
+com\el\vo\PageDto.class
+com\el\vo\FoodFacilityPermitListResultVo.class
+com\el\config\MybatisPlusConfig.class
+com\el\model\FoodFacilityPermit.class
+com\el\mapper\FoodFacilityPermitMapper.class
+com\el\util\BeanVoDtoUtils.class
+com\el\vo\FoodFacilityPermitDetailVo.class
